@@ -1,5 +1,9 @@
 package com.example.segundoexamenparcialdm.Models
 
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
+
+@Parcelize
 data class Student(
     val id: Int,
     val primerNombre: String,
@@ -12,8 +16,9 @@ data class Student(
     val jornada: String,
     val fotoPerfil: String,
     val cursosMatriculados: List<Course>
-)
+) : Parcelable
 
+@Parcelize
 data class Course(
     val semestre: Int,
     val semestrePensum: Int,
@@ -22,4 +27,4 @@ data class Course(
     val prerequisitos: List<String>,
     val codigo: String,
     val docente: String
-)
+) : Parcelable

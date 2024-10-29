@@ -8,6 +8,7 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.segundoexamenparcialdm.Adapters.CourseAdapter
 import com.example.segundoexamenparcialdm.Models.Student
 import com.example.segundoexamenparcialdm.databinding.ActivityStudentDetailBinding
 

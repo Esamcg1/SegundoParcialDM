@@ -19,10 +19,19 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@{student.primerNombre + ' ' + student.primerApellido}"
+            android:text="@{student.segundoNombre + ' ' + student.segundoApellido}"
             />
-
-        <RecyclerView
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{student.carrera + ' ' + student.numeroCarnet}"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{student.sede + ' ' + student.jornada}"
+            />
+        <RelativeLayout
             android:id="@+id/recyclerViewCourses"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
